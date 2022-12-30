@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: "DM Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  // --nav-height: 4rem;
+
+  /*====== Cor ====== */
+  --background-primary: #dce9e2;
+  --background-second: #DCE9E2;
+  --first-color: #00453a;
+  --second-color: #00856f;
+  --title-color: hsl(210, 11%, 15%);
+  --text-color-second: hsl(210, 9%, 31%);
+  --stats-color: hsl(39, 100%, 97%);
+  --scrollbar-color: hsl(257, 100%, 93%);
+}
