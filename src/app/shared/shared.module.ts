@@ -6,13 +6,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MatTabsModule } from '@angular/material/tabs';
-import { AboutComponent } from '../about/about.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    AboutComponent,
   ],
   exports: [HeaderComponent, FooterComponent],
   imports: [

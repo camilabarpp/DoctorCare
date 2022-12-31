@@ -1,3 +1,5 @@
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { AboutComponent } from './about/about.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -13,6 +15,7 @@ import { MaterialModule } from './material/material.module';
   declarations: [
     AppComponent,
     HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

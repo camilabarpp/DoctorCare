@@ -3,17 +3,19 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent implements OnInit {
-closeMenu() {
-throw new Error('Method not implemented.');
-}
-  @Input() logo: string = '/assets/logo/logo2.svg'
+export class HeaderComponent {
 
-  constructor() { }
+  @Input() logo: string = '/assets/logo/logo2.svg';
 
-  ngOnInit(): void {
+  closeMenu() {
+    throw new Error('Method not implemented.');
   }
+
+  openMenu(): void {
+    document.body.classList.add('menu-expanded');
+  }
+
 
 }
