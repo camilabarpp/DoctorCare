@@ -9,13 +9,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './home/home.component';
 import { MaterialModule } from './material/material.module';
+import { WelcomeToDoctorCareComponent } from './welcome-to-doctor-care/welcome-to-doctor-care.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    WelcomeToDoctorCareComponent
   ],
   imports: [
     BrowserModule,

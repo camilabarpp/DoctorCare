@@ -1,0 +1,49 @@
+@use "../../styles.scss";
+
+section.container {
+  min-width: 100%;
+  background-color: var(--background-primary);
+}
+
+.button-agendar {
+  // border: var(--first-color) 1px solid;
+  color: #fff;
+  border-radius: 50px;
+  background-color: var(--first-color);
+}
+
+.button-agendar li a {
+  display: flex;
+  align-items: center;
+}
+
+.button-agendar:hover {
+  color: var(--background-primary);
+}
+
+.div-left {
+  span {
+    padding-bottom: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--second-color);
+  }
+
+  h1 {
+    padding-bottom: 24px;
+    font-size: 52px;
+    font-weight: 700;
+  }
+
+  p {
+    padding-bottom: 32px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .border-right {
+    border-right: var(--second-color) 1px solid;
+  }
+}
+

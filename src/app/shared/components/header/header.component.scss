@@ -1,7 +1,7 @@
 @use "../../../../styles.scss";
 
 nav.scroll {
-  background-color: var(--background-second);
+  background-color: var(--background-third);
 }
 
 @media (min-width: 375px) {
@@ -9,6 +9,18 @@ nav.scroll {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+}
+
+nav {
+  display: flex;
+
+  // height: 100vh;
+
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
+  z-index: 100;
 }
 
 // nav.scroll svg:nth-child(1) path {
@@ -19,11 +31,20 @@ nav.scroll {
 //   stroke: white;
 // }
 
+// header {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: 1000;
+// }
+
 .button-agendar {
   border: var(--first-color) 1px solid;
   color: var(--first-color);
   border-radius: 50px;
 }
+
 
 .button-agendar:hover {
   background-color: var(--first-color);
@@ -71,29 +92,4 @@ nav button {
   color: var(--second-color);
   border-bottom: var(--second-color) 1px solid;
   padding-bottom: 26px;
-}
-
-// .nav-agende a {
-//   background: var(--background-primary);
-//   color: var(--first-color);
-//   border-radius: 40px;
-//   padding: 10px 24px;
-// }
-
-.nav-agende a:hover {
-  color: var(--background-primary);
-  background-color: var(--first-color);
-}
-
-.nav-social {
-  margin-top: 5px;
-  font-size: var(--mb-1-5);
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  text-align: center;
-}
-
-.nav-icon {
-  color: white;
 }

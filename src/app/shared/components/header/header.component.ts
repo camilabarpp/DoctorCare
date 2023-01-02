@@ -6,7 +6,6 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-
   @Input() logo: string = '/assets/logo/logo2.svg';
 
   closeMenu() {
@@ -16,6 +15,4 @@ export class HeaderComponent {
   openMenu(): void {
     document.body.classList.add('menu-expanded');
   }
-
-
 }
