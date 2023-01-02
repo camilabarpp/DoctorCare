@@ -1,16 +1,19 @@
-.div-left {
-  span {
-    font-weight: 700;
-    font-size: 14px;
-    color: var(--second-color);
-  }
+:host {
 
-  h1 {
-    font-size: 40px;
-    font-weight: 700;
-  }
+  .div-left {
+    span {
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--second-color);
+    }
 
-  p {
-    font-size: 16px;
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 16px;
+    }
   }
 }
