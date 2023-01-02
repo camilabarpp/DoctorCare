@@ -1,3 +1,4 @@
+import { DoctorServicesComponent } from './doctor-services/doctor-services.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { NgModule } from '@angular/core';
@@ -17,7 +18,8 @@ import { WelcomeToDoctorCareComponent } from './welcome-to-doctor-care/welcome-t
     AppComponent,
     HomeComponent,
     AboutComponent,
-    WelcomeToDoctorCareComponent
+    WelcomeToDoctorCareComponent,
+    DoctorServicesComponent
   ],
   imports: [
     BrowserModule,

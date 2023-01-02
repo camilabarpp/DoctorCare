@@ -4,40 +4,13 @@ nav.scroll {
   background-color: var(--background-third);
 }
 
-@media (min-width: 375px) {
-  .sm\:pl-32 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
 nav {
-  display: flex;
-
-  // height: 100vh;
-
   position: fixed;
   top: 0;
   width: 100vw;
 
   z-index: 100;
 }
-
-// nav.scroll svg:nth-child(1) path {
-//   fill: white;
-// }
-
-// nav.scroll button path {
-//   stroke: white;
-// }
-
-// header {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   z-index: 1000;
-// }
 
 .button-agendar {
   border: var(--first-color) 1px solid;
