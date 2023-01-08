@@ -36,23 +36,6 @@ nav button {
   cursor: pointer;
 }
 
-#nav .open {
-  background: none;
-}
-
-#nav.active .open {
-  display: none;
-}
-
-#nav .close {
-  display: none;
-}
-
-#nav.active .close {
-  display: block;
-  background: var(--first-color);
-}
-
 .ul-links {
   margin: 10px;
 }

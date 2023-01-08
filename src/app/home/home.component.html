@@ -1,7 +1,42 @@
-<header></header>
+<header (toggledSideNav)="toggleSideNav()"></header>
 
-<welcome-to-doctor-care></welcome-to-doctor-care>
-<doctor-services></doctor-services>
-<about></about>
+<mat-sidenav-container (backdropClick)="toggleSideNav()">
+  <mat-sidenav mode="push" [opened]="showSideNav" autoFocus="false">
+    <div class="menu w-[100%] h-[100%] mt-14 fixed bg-[#00856F]">
+      <ul class="ul-links flex mt-14 mb-12 gap-12">
+        <li><a (click)="toggleSideNav()" href="#home">Ínicio</a></li>
+        <li><a (click)="toggleSideNav()" href="#services">Serviços</a></li>
+        <li><a (click)="toggleSideNav()" href="#about">Sobre</a></li>
+      </ul>
 
-<footer></footer>
+      <div class="flex justify-center">
+        <div class="button-agendar w-[270px] pt-3 pb-3 pl-6 pr-6 mb-14">
+          <ul>
+            <li>
+              <a href="#contact" class="flex-row"> AGENDE SUA CONSULTA</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex justify-center gap-8">
+        <a href="#">
+          <img src="assets/instagram.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="assets/facebook.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="assets/youtube.svg" alt="" />
+        </a>
+      </div>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="background-color-white">
+    <welcome-to-doctor-care></welcome-to-doctor-care>
+    <doctor-services></doctor-services>
+    <about></about>
+    <footer></footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

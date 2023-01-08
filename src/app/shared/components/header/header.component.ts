@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'header',
@@ -6,13 +6,12 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  @Input() logo: string = '/assets/logo/logo2.svg';
+  showSideNav!: boolean;
+  @Input() isLoggedIn!: boolean;
+  @Output() toggledSideNav: EventEmitter<boolean> = new EventEmitter();
 
-  closeMenu() {
-    throw new Error('Method not implemented.');
-  }
-
-  openMenu(): void {
-    document.body.classList.add('menu-expanded');
+  toggleSideNav() {
+    this.toggledSideNav.emit();
+    this.showSideNav = !this.showSideNav;
   }
 }

@@ -3,16 +3,12 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
-openMenu() {
-throw new Error('Method not implemented.');
-}
+export class HomeComponent {
+  public showSideNav!: boolean;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  toggleSideNav(): void {
+    this.showSideNav = !this.showSideNav;
   }
-
 }
