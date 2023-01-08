@@ -23,14 +23,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets",
-              "src/assets/images",
-              "src/assets/images/images/happy-doctor-holding-a-clipboard-with-patients.png",
-              "src/assets/images/images/image-about-us.svg",
-              "src/assets/images/images/woman-smiling-blouse-green.png"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
             "scripts": []
           },

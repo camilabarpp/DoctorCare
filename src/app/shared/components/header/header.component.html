@@ -1,23 +1,22 @@
 <nav
-  class="scroll flex items-center justify-between xl:pl-32 xl:pr-32 md:pb-8 md:pt-8 md:pl-10 md:pr-10 pl-7 pr-7"
+  class="scroll flex items-center sm:text-sm justify-between sm:h-24 xl:pl-32 xl:pr-32 md:pb-8 md:pt-8 md:pl-10 md:pr-10 pl-7 pr-7"
   id="nav"
 >
   <div class="md:w-[15%] sm:w-[30%]">
     <a href="#">
-      <img src="/assets/images/logo/logo2.svg" alt="Logotipo da DoctorCare" />
+      <img src="../../../../assets/images/logo/logo2.svg" alt="Logotipo da DoctorCare" />
     </a>
   </div>
 
-  <div class="sm:block hidden lg:text-lg sm:text-sm">
-    <ul class="ul-links flex gap-8">
+  <div class="sm:block hidden lg:text-lg">
+    <ul class="ul-links flex md:gap-8 sm:gap-6">
       <li><a href="#home">Início</a></li>
       <li><a href="#services">Serviços</a></li>
       <li><a href="#about">Quem Somos</a></li>
-      <li><a href="#experts">Especialistas</a></li>
     </ul>
   </div>
   <div
-    class="button-agendar sm:block hidden lg:pt-3 lg:pb-3 lg:pl-6 lg:pr-6 md:pl-2 md:pr-2 md:pt-1 md:pb-1"
+    class="button-agendar sm:block hidden lg:pt-3 lg:pb-3 lg:pl-6 lg:pr-6 sm:px-1 sm:py-1"
   >
     <ul>
       <li>
@@ -28,7 +27,7 @@
 
   <div class="sm:hidden block mt-2" id="menu-mobile">
     <button (click)="openMenu()" class="open">
-      <img src="/assets/images/icons/menu.svg" alt="Ícone do menu" />
+      <img src="assets/images/icons/menu.svg" alt="Ícone do menu" />
     </button>
   </div>
 </nav>
