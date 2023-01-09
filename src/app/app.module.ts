@@ -11,6 +11,7 @@ import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './home/home.component';
 import { MaterialModule } from './material/material.module';
 import { WelcomeToDoctorCareComponent } from './welcome-to-doctor-care/welcome-to-doctor-care.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { WelcomeToDoctorCareComponent } from './welcome-to-doctor-care/welcome-t
     HomeComponent,
     AboutComponent,
     WelcomeToDoctorCareComponent,
-    DoctorServicesComponent
+    DoctorServicesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

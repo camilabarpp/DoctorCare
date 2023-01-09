@@ -1,0 +1,21 @@
+.button-agendar {
+  color: #fff;
+  border-radius: 50px;
+  background-color: var(--second-color);
+}
+
+.button-agendar li a {
+  display: flex;
+  align-items: center;
+}
+
+.button-agendar:hover {
+  color: var(--background-primary);
+  background-color: var(--first-color);
+}
+
+.left-side {
+  h1 {
+    font-weight: 700;
+  }
+}

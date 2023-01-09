@@ -1,9 +1,5 @@
 @use "../../../../styles.scss";
 
-nav.scroll {
-  background-color: var(--background-third);
-}
-
 nav {
   position: fixed;
   top: 0;
@@ -12,12 +8,23 @@ nav {
   z-index: 100;
 }
 
+nav.scroll {
+  background: var(--primary-color);
+}
+
+nav.scroll .logo path {
+  fill: white;
+}
+
+nav.scroll button path {
+  stroke: white;
+}
+
 .button-agendar {
   border: var(--first-color) 1px solid;
   color: var(--first-color);
   border-radius: 50px;
 }
-
 
 .button-agendar:hover {
   background-color: var(--first-color);
@@ -32,7 +39,6 @@ nav {
 
 nav button {
   border: none;
-  background: var(--background-primary);
   cursor: pointer;
 }
 

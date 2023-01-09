@@ -11,4 +11,5 @@ export class HomeComponent {
   toggleSideNav(): void {
     this.showSideNav = !this.showSideNav;
   }
+
 }
