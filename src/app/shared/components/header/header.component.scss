@@ -1,6 +1,7 @@
 @use "../../../../styles.scss";
 
 nav {
+  background-color: var(--background-primary);
   position: fixed;
   top: 0;
   width: 100vw;
@@ -8,16 +9,34 @@ nav {
   z-index: 100;
 }
 
-nav.scroll {
-  background: var(--primary-color);
-}
+.scrolled {
+  background-color: var(--second-color);
+  .logo path {
+    fill: white;
+  }
+  .ul-links li a {
+    color: white;
+  }
 
-nav.scroll .logo path {
-  fill: white;
-}
+  .button-agendar {
+    color: var(--second-color);
+    border-radius: 50px;
+    background-color: white;
+  }
 
-nav.scroll button path {
-  stroke: white;
+  .button-agendar li a {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .button-agendar:hover {
+    color: var(--background-primary);
+    background-color: var(--second-color);
+  }
+
+  .menu-mobile {
+    padding: 10px 4px;
+  }
 }
 
 .button-agendar {
@@ -29,12 +48,6 @@ nav.scroll button path {
 .button-agendar:hover {
   background-color: var(--first-color);
   color: var(--background-primary);
-}
-
-#nav.active .menu {
-  visibility: visible;
-  overflow-x: visible;
-  height: 100vh;
 }
 
 nav button {

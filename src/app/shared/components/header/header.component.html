@@ -1,10 +1,11 @@
 <nav
-  class="flex {{background}} items-center sm:text-sm justify-between sm:h-24 xl:pl-32 xl:pr-32 md:pb-8 md:pt-8 md:pl-10 md:pr-10 pl-7 pr-7"
+  [class.scrolled]="scrolled"
+  class="flex items-center sm:text-sm justify-between sm:h-24 xl:pl-32 xl:pr-32 md:pb-8 md:pt-8 md:pl-10 md:pr-10 pl-7 pr-7"
   id="nav"
 >
   <div class="md:w-[15%] sm:w-[30%]">
     <a href="#">
-      <img src="assets/logo2.svg" alt="Logotipo da DoctorCare" />
+      <img src="{{logo}}" alt="Logotipo da DoctorCare" />
     </a>
   </div>
 
@@ -25,9 +26,9 @@
     </ul>
   </div>
 
-  <div class="sm:hidden block mt-2" id="menu-mobile">
+  <div class="menu-mobile sm:hidden block mt-2">
     <button (click)="toggleSideNav()" class="open">
-      <img src="assets/menu.svg" alt="Ícone do menu" />
+      <img src="{{menu}}" alt="Ícone do menu" />
     </button>
   </div>
 </nav>
