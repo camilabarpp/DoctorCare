@@ -33,3 +33,11 @@
   color: var(--background-primary);
   background-color: var(--second-color);
 }
+
+.no-scroll {
+  overflow: hidden;
+}
+
+mat-sidenav{
+  overflow-y: auto;
+}

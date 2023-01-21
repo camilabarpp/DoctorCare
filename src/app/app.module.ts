@@ -1,3 +1,4 @@
+import { ScrollingModule } from '@angular/cdk/scrolling';
 import { DoctorServicesComponent } from './doctor-services/doctor-services.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { AboutComponent } from './about/about.component';
@@ -12,7 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { MaterialModule } from './material/material.module';
 import { WelcomeToDoctorCareComponent } from './welcome-to-doctor-care/welcome-to-doctor-care.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { NgsRevealModule } from 'ngx-scrollreveal';
 
 @NgModule({
   declarations: [
@@ -21,16 +22,17 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     WelcomeToDoctorCareComponent,
     DoctorServicesComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
+    NgsRevealModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

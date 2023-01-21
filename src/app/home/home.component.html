@@ -1,10 +1,10 @@
 <header (toggledSideNav)="toggleSideNav()"></header>
 
-<mat-sidenav-container (backdropClick)="toggleSideNav()">
-  <mat-sidenav mode="push" [opened]="showSideNav" autoFocus="false">
+<mat-sidenav-container (backdropClick)="toggleSideNav()" class="h-full">
+  <mat-sidenav mode="push" [(opened)]="showSideNav" autoFocus="true">
     <div class="menu w-[100%] h-[100%] mt-10 fixed bg-[#00856F]">
       <ul class="ul-links flex mt-14 mb-12 gap-12">
-        <li><a (click)="toggleSideNav()" href="#home">Ínicio</a></li>
+        <li><a (click)="toggleSideNav()" href="#home">Íniciooogfhtfhf</a></li>
         <li><a (click)="toggleSideNav()" href="#services">Serviços</a></li>
         <li><a (click)="toggleSideNav()" href="#about">Sobre</a></li>
       </ul>
@@ -13,7 +13,9 @@
         <div class="button-agendar w-[270px] pt-3 pb-3 pl-6 pr-6 mb-14">
           <ul>
             <li>
-              <a href="#contact" class="flex-row"> AGENDE SUA CONSULTA</a>
+              <a (click)="toggleSideNav()" href="#contact" class="flex-row">
+                AGENDE SUA CONSULTA</a
+              >
             </li>
           </ul>
         </div>

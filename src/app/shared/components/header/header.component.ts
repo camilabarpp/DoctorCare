@@ -6,6 +6,7 @@ import {
   OnInit,
   HostListener,
 } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'header',
@@ -14,7 +15,6 @@ import {
 })
 export class HeaderComponent implements OnInit {
   showSideNav!: boolean;
-  @Input() isLoggedIn!: boolean;
   @Output() toggledSideNav: EventEmitter<boolean> = new EventEmitter();
 
   @Input() logo?: string;
@@ -25,13 +25,13 @@ export class HeaderComponent implements OnInit {
     this.onScroll();
   }
 
-  toggleSideNav() {
+  toggleSideNav(): void {
     this.toggledSideNav.emit();
     this.showSideNav = !this.showSideNav;
   }
 
   @HostListener('window:scroll', [])
-  onScroll() {
+  onScroll(): void {
     if (window.pageYOffset > 0) {
       this.scrolled = true;
       this.logo = 'assets/logo.svg';

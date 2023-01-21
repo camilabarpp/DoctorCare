@@ -34,8 +34,10 @@ nav {
     background-color: var(--second-color);
   }
 
-  .menu-mobile {
-    padding: 10px 4px;
+  .menu-mobile img {
+    padding: 10px;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -68,3 +70,5 @@ nav button {
   border-bottom: var(--second-color) 1px solid;
   padding-bottom: 26px;
 }
+
+

@@ -10,6 +10,10 @@ export class HomeComponent {
 
   toggleSideNav(): void {
     this.showSideNav = !this.showSideNav;
+    if (this.showSideNav) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
   }
-
 }
