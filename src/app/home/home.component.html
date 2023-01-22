@@ -1,10 +1,8 @@
-<header (toggledSideNav)="toggleSideNav()"></header>
-
 <mat-sidenav-container (backdropClick)="toggleSideNav()" class="h-full">
-  <mat-sidenav mode="push" [(opened)]="showSideNav" autoFocus="true">
-    <div class="menu w-[100%] h-[100%] mt-10 fixed bg-[#00856F]">
-      <ul class="ul-links flex mt-14 mb-12 gap-12">
-        <li><a (click)="toggleSideNav()" href="#home">Íniciooogfhtfhf</a></li>
+  <mat-sidenav mode="over" [(opened)]="showSideNav">
+    <div class="menu w-[100%] h-[100%] fixed bg-[#00856F] flex flex-col justify-center">
+      <ul class="ul-links flex mb-12 gap-12">
+        <li><a (click)="toggleSideNav()" href="#home">Ínicio</a></li>
         <li><a (click)="toggleSideNav()" href="#services">Serviços</a></li>
         <li><a (click)="toggleSideNav()" href="#about">Sobre</a></li>
       </ul>
@@ -36,6 +34,7 @@
   </mat-sidenav>
 
   <mat-sidenav-content class="background-color-white">
+    <header (toggledSideNav)="toggleSideNav()"></header>
     <welcome-to-doctor-care></welcome-to-doctor-care>
     <doctor-services></doctor-services>
     <about></about>

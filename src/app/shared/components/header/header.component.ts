@@ -15,11 +15,10 @@ import { MatSidenav } from '@angular/material/sidenav';
 })
 export class HeaderComponent implements OnInit {
   showSideNav!: boolean;
+  scrolled: boolean = false;
   @Output() toggledSideNav: EventEmitter<boolean> = new EventEmitter();
-
   @Input() logo?: string;
   @Input() menu?: string;
-  scrolled: boolean = false;
 
   ngOnInit(): void {
     this.onScroll();
